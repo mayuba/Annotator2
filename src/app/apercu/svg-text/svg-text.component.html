@@ -1,0 +1,28 @@
+
+<svg  >
+  <g>
+    <!--[@text_move]="state[3]"-->
+    <rect  x="475" y="157" width="45" height="30" [@text_move]="state[3]" style="fill:#7e57c2 ;fill-opacity:0.5" ></rect>
+  </g>
+  <g>
+    <!--[@text_move]="state[2]"-->
+    <rect  x="550" y="308" width="97" height="30" [@text_move]="state[2]" style="fill:#7e57c2 ;fill-opacity:0.5" ></rect>
+  </g>
+
+  <g>
+    <!--[@text_move]="state[1]"-->
+      <rect  x="363" y="398" width="38" height="30" [@text_move]="state[1]" style="fill:#7e57c2 ;fill-opacity:0.5" ></rect>
+  </g>
+  <g>
+    <!--[@text_move]="state[0]"-->
+    <rect  x="140" y="70" width="125" height="30" [@text_move]="state[0]" style="fill:#7e57c2 ;fill-opacity:0.5" ></rect>
+  </g>
+
+
+    <!--[@text_move]="phrase.animation"-->
+  <g *ngFor="let phrase of textTab" [@text_move]="phrase.animation">
+      <text x="0" [attr.y]="phrase.position">{{phrase.text}}</text>
+  </g >
+
+</svg>
+<!--[@text_move]="phrase.animation"-->

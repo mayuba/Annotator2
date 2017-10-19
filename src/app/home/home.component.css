@@ -1,0 +1,17 @@
+.view_card{
+  width: 800px;
+  flex: 1 1 auto;
+}
+.toolbar-user-name{
+ position: absolute;
+  right: 100px;
+}
+
+.toolbar_menu_button{
+  position: absolute;
+  right:20px;
+}
+
+.toolbar-titre{
+  transform: translate(200 30) scale(5);
+}
