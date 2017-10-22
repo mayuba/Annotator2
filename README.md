@@ -1,6 +1,37 @@
 # Adnotatio
 ![Alt text](https://firebasestorage.googleapis.com/v0/b/projetia-8a0f1.appspot.com/o/uploads%2Fadno.svg?alt=media&token=2992a291-6958-4155-9282-6d37084d3b76)
 
+
+## Conditions préalables
+L'application est basé sur Angular-Cli V4
+```
+  npm install @angular/cli
+  ```
+### 1. Créer votre projet
+```
+  ng new <project-name>
+  cd <project-name>
+  ```
+### 2. Installer AngularFire et Firebase
+```
+  npm install angularfire2 firebase --save
+  ```
+### 3. Configurer vos fichiers environment
+```
+  export const environment = {
+    production: false,
+    firebase: {
+      apiKey: '<your-key>',
+      authDomain: '<your-project-authdomain>',
+      databaseURL: '<your-database-URL>',
+      projectId: '<your-project-id>',
+      storageBucket: '<your-storage-bucket>',
+      messagingSenderId: '<your-messaging-sender-id>'
+    }
+  };
+  ```
+  ### 4. Installer Angular Material
+  Le Material Design est un ensemble de règle de design pour les interfaces graphiques proposées par Google. Vous devres installer la librairie sous longlet [Guides](https://material.angular.io/guide/getting-started)
 ## AngularFirestore 
 Ce projet a été réalisé avec la librairie angularfire2 V5, ce qui permet l’utilisation de collections offert par « Cloud Firestore ». Les données sont entreposées dans des documents organisés en collections. Chaque document contient un ensemble de paires clé-valeur.
 * **administrateurs**
@@ -25,7 +56,15 @@ Ce projet a été réalisé avec la librairie angularfire2 V5, ce qui permet l�
     * size : xxx k
     * url : https://firebases
 
+## Structure de fichiers du projet
+Dans Angular les modules sont statique et le mécanisme pour y injecter des données se fait par l’utilisation de services. Dans adnotatio, les services sont :
+* annotateurs
+* auth
+* uploads
+* projets
+* administrateur
 
+![Alt text](https://firebasestorage.googleapis.com/v0/b/projetia-8a0f1.appspot.com/o/uploads%2Farchi111-100.jpg?alt=media&token=dc2359b0-6880-4dd6-a4df-2a4b92ff8e56)
 ## Build 
 Exécutez `ng build` pour générer le projet. Les fichiers utilisé en production seront enregistrés dans le répertoire `dist /`. Les paramètres du build se trouvent dans le fichier firebase.json.
 
