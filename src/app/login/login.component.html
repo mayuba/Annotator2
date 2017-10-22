@@ -1,25 +1,4 @@
 
-<!--<mat-grid-list cols="3" rowHeight="5:1" class="identification_grid">-->
-  <!--<mat-grid-tile>-->
-  <!--</mat-grid-tile>-->
-  <!--<mat-grid-tile>-->
-
-    <!--<mat-card class="identification-card">-->
-      <!--<mat-card-content>-->
-        <!--<mat-grid-list cols="5">-->
-          <!--<mat-grid-tile colspan="4">-->
-            <!--<h2> Identification </h2>-->
-          <!--</mat-grid-tile>-->
-          <!--<mat-grid-tile colspan="1">-->
-            <!--<button mat-mini-fab color="accent" (click)="login(!authService.isLoggedIn)" *ngIf="!authService.isLoggedIn"><i class="material-icons">perm_identity</i></button>-->
-            <!--<button mat-mini-fab color="accent" (click)="logout(!authService.isLoggedIn)" *ngIf="authService.isLoggedIn"><i class="material-icons">perm_identity</i></button>-->
-
-          <!--</mat-grid-tile>-->
-        <!--</mat-grid-list>-->
-      <!--</mat-card-content>-->
-    <!--</mat-card>-->
-  <!--</mat-grid-tile>-->
-  <!--<mat-grid-tile></mat-grid-tile>-->
 
   <mat-grid-list cols="1" rowHeight="800px" class="grid_list_login">
     <mat-grid-tile colspan="1" class="title">
@@ -37,7 +16,7 @@
             <mat-grid-tile  colspan = "4" rowspan="4" class="trois">
               <mat-list>
                 <mat-list-item class="list-item-button">
-                  <button mat-raised-button (click)="facebookLogin()" routerLink="/inscription" routerLinkActive="active" color="primary" style="width: 400px ;  height:75px"><h3 class="login-text-button">Connectez-vous avec Facebook</h3> <img class="image-providers" src="./assets/svg_fournisseur_acces/Facebook_Home_logo_old.svg"/></button>
+                  <button mat-raised-button (click)="facebookLogin()" routerLink="/inscription" routerLinkActive="active" color="primary" style="width: 400px ;  height:75px"><h3 class="login-text-button facebook">Connectez-vous avec Facebook</h3> <img class="image-providers" src="./assets/svg_fournisseur_acces/Facebook_Home_logo_old.svg"/></button>
                 </mat-list-item>
                 <mat-list-item class="list-item-button">
                   <button (click)="googleLogin()" mat-raised-button routerLink="/inscription" routerLinkActive="active" color="primary" style="width: 400px ;  height:75px"><h3 class="login-text-button">Connectez-vous avec Google</h3> <img class="google" src="./assets/svg_fournisseur_acces/Google_-G-_Logo.svg"/></button>

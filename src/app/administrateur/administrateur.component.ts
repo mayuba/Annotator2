@@ -35,11 +35,13 @@ export class AdministrateurComponent implements OnInit {
   isLinear = false;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
+  test4 = 'allo';
 
 
   constructor(private fb: FormBuilder, db: AngularFireDatabase, private http: Http, private up: UploadService,  private an: AnnotateurService, private pr: ProjetService) {
     this.itemRef = db.object('/edition');
     this.item = this.itemRef.valueChanges();
+    this.test4 = 'allo';
   }
 
   save(newName: string) {
