@@ -135,8 +135,9 @@ Ce projet a été réalisé avec la librairie angularfire2 V5 (AngularFirestore)
 <a id="docs"></a>
 ## 5. Documentation, rapport de bugs & accès à l'application
 - Consultez la [documentation complète du logiciel](https://github.com/iglewski/Annotator2/wiki) sur le wiki   
-- Rapportez une erreur ou un commentaire sur le [compte SonarQube du projet](#)  
+- Rapportez une [erreur ou un commentaire](https://github.com/iglewski/Annotator2/issues/new) qui est jugé pertinent 
 - Accédez à [Adnotatio](https://infsys-2a1e8.firebaseapp.com/login?session_id=123456789#anchor) en ligne 
+- Compte [SonarQube du projet](http://larip.uqo.ca:9000/about)
 
 <a id="createurs"></a>
 ## 6. Créateurs
